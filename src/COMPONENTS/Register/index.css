@@ -1,0 +1,21 @@
+.Register-Form{
+    margin-top: 8rem;
+    height: 18rem;
+    background-color: #e5e5e5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 21rem;
+    font-size: 2rem;
+}
+input{
+    font-size: 1.8rem;
+}
+.Header h4{
+    font-size:x-large;
+    font-weight: bolder;
+}
+.container{
+    margin-top: 7rem;
+}
+a {
+    font-size: medium;
+}

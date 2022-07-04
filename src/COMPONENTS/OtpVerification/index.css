@@ -1,0 +1,19 @@
+.otp {
+    width: 40%;
+    background-color: #e5e5e5;
+    margin: 5rem 15rem;
+}
+.otp h3{
+    width: 30rem;
+    background-color: white;
+}
+
+.otp-form {
+    width: 30rem;
+    background-color: #e5e5e5;
+    padding: 0 3rem;
+
+}
+.otp-form input {
+    width: 25rem;
+}
