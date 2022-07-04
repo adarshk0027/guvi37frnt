@@ -26,7 +26,7 @@ function RegisterForm () {
        validationSchema:VALIDATION_SCHEMA,
         onSubmit:async values=>{
           try{
-            const res= await axios.post('http://localhost:5000/register',values)
+            const res= await axios.post('https://password-reset-webapp.herokuapp.com/register',values)
             console.log(res.data);
             if(res.status==200){
               SetMessage(true)

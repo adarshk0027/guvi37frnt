@@ -31,7 +31,7 @@ function ResetPassword () {
 
   const MailSend=async(values)=>{
     try{
-      const RESPONSE=await axios.post("http://localhost:5000/send",{values})
+      const RESPONSE=await axios.post("https://password-reset-webapp.herokuapp.com/send",{values})
       console.log(RESPONSE.data);
       if(RESPONSE.status==200){
         SetMessage(true)
@@ -52,7 +52,7 @@ function ResetPassword () {
     //Submit Form
     onSubmit:async values => {
       SetClick(true)
-      const res=await axios.post('http://localhost:5000/check-email',values)
+      const res=await axios.post('https://password-reset-webapp.herokuapp.com/check-email',values)
       console.log(res.data);
       await SET_LOGIN(res.data.login)
       await SetModal(res.data.login)

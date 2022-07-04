@@ -26,7 +26,7 @@ function NewPasswordForm () {
     validationSchema: VALIDATION_SCHEMA,
     onSubmit: async values => {
       try {
-        const Changed = await axios.post('http://localhost:5000/Change', values)
+        const Changed = await axios.post('https://password-reset-webapp.herokuapp.com/Change', values)
         if(Changed.status===200){
           SetMessage(true)
           Navigate('/')

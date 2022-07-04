@@ -11,7 +11,7 @@ const Otp_Verification = (props) => {
     const [error, setError] = useState("")
     const Verify_Otp=async()=>{
         try {
-            const res = await axios.post('http://localhost:5000/verification', {
+            const res = await axios.post('https://password-reset-webapp.herokuapp.com/verification', {
                 OtpString: Otp,
                 email:localStorage.getItem('email')
             })
